@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Portafolio</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    }
+
+    header {
+  background-image: url('fondo-header.jpg'); 
+background-size: cover;
+background-position: center;
+color: white;
+padding: 4rem 2rem;
+text-align: center;
+  height: 300px; 
+position: relative;
+}
+
+header h1, header p {
+position: relative;
+  z-index: 2; 
+}
+
+
+    header img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 16px;
+display: block;
+margin: 0 auto 1rem;
+border: 4px solid white;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+transition: transform 0.3s ease;
+}
+
+
+    header img:hover {
+    transform: scale(1.05);
+    }
+
+    section {
+    padding: 2rem;
+    }
+
+    section .experiencia {
+background-color: #fff;
+padding: 1rem;
+margin-bottom: 1rem;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section .experiencia h3 {
+color: #333;
+margin-bottom: 0.5rem;
+}
+
+section .experiencia p {
+margin: 0.5rem 0;
+}
+
+
+    footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+    }
+
+    section ul {
+list-style-type: none;
+padding: 0;
+}
+
+section ul li {
+background-color: #bccae4;
+margin: 0.5rem 0;
+padding: 0.5rem 1rem;
+border-radius: 8px;
+}
+
+section .estudios {
+background-color: #fff;
+padding: 1rem;
+margin-bottom: 1.5rem;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section .estudios h3 {
+color: #333;
+margin-bottom: 0.5rem;
+}
+
+section .estudios p {
+margin: 0.5rem 0;
+}
+
+
+.hobbies {
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hobbies h2 {
+  margin-bottom: 1.5rem;
+}
+
+.hobbies ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hobbies ul li {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.hobbies ul li strong {
+color: #333;
+}
+
+
+h2 {
+color: #333;
+margin-bottom: 2rem;
+font-size: 2rem; 
+font-weight: 400; 
+letter-spacing: 0.5px; 
+text-transform: uppercase; 
+}
+
+
+
+.nav {
+  background-color: #fff;
+  border-bottom: 1px solid #385eaf;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #076df1;
+  font-weight: 500;
+}
+
+.cv-button {
+  background-color: #000000;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 6px;
+}
+
+
+.menu-toggle {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .cv-button {
+    text-align: center;
+  }
+}
+
+
+
+</style>  
+</head>
+<body>
+
+    <header>
+        <img src="yo.jpg" alt="Foto">
+        <h1>¡Hola! Soy German Galban</h1>
+        <p>Desarrollador en formación</p>
+    </header>
+
+    <nav class="nav">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#estudios">Estudios</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="cv.pdf" download class="cv-button">Descargar CV</a></li>
+      </ul>
+    </nav>
+    
+
+
+<section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <div class="experiencia">
+    <p>Soy un desarrollador apasionado por aprender nuevas tecnologías. Me gusta crear soluciones que ayuden a las personas y ver como mis ideas se materializan en la pantalla. Actualmente estoy estudiando desarrollo de aplicaciones multiplataforma. En mis tiempos libres me gusta jugar videojuegos y hacer deportes en  general.</p>
+    </div>
+</section>
+
+
+
+
+<section id="experiencia-laboral">
+    <h2>Experiencia Laboral</h2>
+    <div class="experiencia">
+    <h3>Trabajo en McDonald's</h3>
+    <p><strong>Fecha:</strong> 2024 - Actualidad </p>
+    <p>En mi experiencia en McDonald's, he aprendido a trabajar en equipo, gestionar tiempo eficientemente y brindar un excelente servicio al cliente. Aunque no estaba directamente relacionado con la tecnología, la rapidez y organización que adquirí me han servido para mejorar mi capacidad de resolución de problemas y adaptabilidad.</p>
+    </div>
+    
+
+</section>
+
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    
+    <h3>Técnicas</h3>
+    <ul>
+    <li>HTML, CSS y JavaScript (en progreso)</li>
+    <li>Java (en progreso)</li>
+    
+    </ul>
+
+    <h3>Habilidades Blandas</h3>
+    <ul>
+    <li>Trabajo en equipo</li>
+    <li>Comunicación efectiva</li>
+    <li>Resolución de problemas</li>
+    <li>Adaptabilidad</li>
+    <li>Gestión del tiempo</li>
+    </ul>
+</section>
+
+<section id="estudios">
+    <h2>Mis Estudios</h2>
+    <div class="estudios">
+    <h3>Desarrollo de Aplicaciones Multiplataforma</h3>
+    <p><strong>Institución:</strong> CIFP Juan de Herrera</p>
+    <p><strong>Fecha de inicio:</strong> 2024</p>
+    <p><strong>Descripción:</strong> Actualmente estoy aprendiendo desarrollo de aplicaciones multiplataforma con tecnologías como Java, lo que me permite crear aplicaciones para diferentes plataformas de manera eficiente.</p>
+    </div>
+
+</section>
+
+<section id="hobbies" class="hobbies">
+    <h2>Hobbies e Intereses</h2>
+    <p>Me apasiona la tecnología, y en mi tiempo libre me gusta explorar nuevas herramientas y aprender sobre nuevas tecnologías. Además de la programación, algunos de mis hobbies incluyen:</p>
+    <ul>
+    <li><strong>Música:</strong> Me gusta casi todo tipo de música. Siempre estoy buscando nuevas canciones y artistas. No tengo un artista favorito pero los que mas escucho son Feid, Steve Lacy, Bad bunny y Akon.</li>
+    <li><strong>Videojuegos:</strong> Una de las cosas que mas me gusta es jugar a videojuegos. Juego todo tipo de videojuegos survivals, rpg, competitivos, deportes, simulación pero mis favoritos son Minecraft, Baldur's gate 3 y la saga Diablo.</li>
+    <li><strong>Ejercicio:</strong> Practico deportes como el fútbol. Mantenerme activo me ayuda a desconectar y a estar más enfocado en general.</li>
+    <li><strong>Viajar:</strong> He visitado varios países y planeo seguir viajando para aprender de otras partes del mundo.</li>
+    </ul>
+</section>
+
+
+
+
+<section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>Si deseas ponerte en contacto conmigo, puedes enviarme un correo electrónico a:</p>
+    <p><a href="mailto:germangalban3@gmail.com">germangalban3@gmail.com</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 German Galban. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
